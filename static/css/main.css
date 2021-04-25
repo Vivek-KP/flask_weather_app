@@ -1,0 +1,61 @@
+body{
+    margin:0 ;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+.search{
+    position: relative;
+    left: 40%;
+    top: 100px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.box{
+    border: 1px solid ;
+    padding: 10px;
+    margin: 0px;
+    background-color: darkcyan;
+    
+}
+.button:hover{
+    background-color: darkcyan;
+    color: white;
+}
+.weat{
+    width: 250px;
+    padding: 5px;
+    height: 140px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);;
+    position: relative;
+    left: 41%;
+    top:150px;
+}
+.title{
+    position: relative;
+    left: 50%;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.subtitle{
+    position: relative;
+    left: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.degree{
+    position: relative;
+    left: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.png{
+    position: relative;
+    right: 15%;
+    top: 10px;
+}
+.para{
+    position: relative;
+    bottom: 60px;
+    left: 5%;
+}

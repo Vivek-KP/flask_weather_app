@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="box">
+<h1 >Check the Weather here</h1>
+</div>
+<div class="search">
+<form action="/"  method="POST">
+<input type="text" name="place" id="place" placeholder="Enter the place" size="30">
+<input type="submit" value="search" class="button">
+</form>
+</div>
+{% for weather in weather_data %}
+        <div class="weat">
+        <figure class="png">
+        <img src="https://openweathermap.org/img/w/{{weather['icon']}}.png">
+        </figure>
+        <p class="para">
+        <span class="title">{{weather.city}}</span><br>
+        <span class="subtitle">{{weather.dis}}</span><br>
+        <span class="degree">{{weather.tem}}</span>
+        <br>
+        <br>
+       <a href="/delete/{{weather.id}}">delete</a>
+        </p>
+        </div>
+        <br>
+{% endfor %}
+{% endblock %}
