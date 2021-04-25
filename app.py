@@ -36,7 +36,6 @@ def index():
     weather_data=[]
     for city in cities:
         r=requests.get(url.format(city.name)).json()
-        print(r)
         weather={
         'id':city.id,
         'city':city.name,
