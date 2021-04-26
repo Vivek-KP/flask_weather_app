@@ -32,10 +32,11 @@ def index():
                 return "rhrir"
 
     cities=City.query.all()
-    url="https://api.openweathermap.org/data/2.5/weather?q={}&appid=b2bd45294f6c0c2b5ec818fd86bb3b9a"
+    url="https://api.openweathermap.org/data/2.5/weather?q={}&appid=b2bd45294f6c0c2b5ec818fd86bb3b9a&units=metric"
     weather_data=[]
     for city in cities:
         r=requests.get(url.format(city.name)).json()
+        print(r)
         weather={
         'id':city.id,
         'city':city.name,
